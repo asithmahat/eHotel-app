@@ -3,8 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddHotelComponent } from './add-hotel/add-hotel.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-import { SearchHotelComponent } from './search-hotel/search-hotel.component';
 
+import { SearchHotelComponent } from './search-hotel/search-hotel.component';
 const routes: Routes = [
   {
     path: '',

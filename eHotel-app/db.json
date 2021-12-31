@@ -1,0 +1,51 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "fullname": "Asith Mahat",
+      "email": "asithmahat@outlook.com",
+      "phone": 17670001,
+      "password": "qwerty123",
+      "loggedin": true
+    },
+    {
+      "id": 2,
+      "fullname": "Frank Lampard",
+      "email": "someone@outlook.com",
+      "phone": 17670002,
+      "password": "qwerty231",
+      "loggedin": false
+    },
+    {
+      "id": 3,
+      "fullname": "John Terry",
+      "email": "sometwo@outlook.com",
+      "phone": 17670003,
+      "password": "qwerty312",
+      "loggedin": false
+    }
+  ],
+  "listings": [
+    {
+      "id": 1,
+      "uid": 0,
+      "hotelName": "Thimphu Hotel",
+      "location": "Thimphu",
+      "price": 1500
+    },
+    {
+      "id": 2,
+      "uid": 0,
+      "hotelName": "Hotel Phuentsholing",
+      "location": "Phuentsholing",
+      "price": 1300
+    },
+    {
+      "id": 3,
+      "uid": 0,
+      "hotelName": "Tsirang Resort",
+      "location": "Tsirang",
+      "price": 1500
+    }
+  ]
+}

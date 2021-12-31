@@ -1,1 +1,82 @@
-<p>add-hotel works!</p>
+<nav class="navbar navbar-light">
+    <div class="container-fluid">
+        <h1 style="color: aliceblue;">Manage Your Listings</h1>
+        <div class="d-flex">
+            <button type="button" (click)="clickAddHotel()" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Hotel</button>
+        </div>
+    </div>
+</nav> 
+
+<table class="table mt-3" style="color: aliceblue;" >
+    <thead>
+        <tr>
+            <th scope="col">Hotel Name</th>
+            <th scope="col">Location</th>
+            <th scope="col">Price</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let row of hotelData">
+            <td>{{ row.hotelName }}</td>
+            <td>{{ row.location }}</td>
+            <td>Nu. {{ row.price }} per Night</td>
+            <td>
+                <button type="button" (click)="onEdit(row)" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-info">Edit</button>
+
+                <Button (click)="deleteHotelListing(row)" class="btn btn-danger mx-3">Delete</Button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">ADD NEW HOTEL</h5>
+    </div>
+        <div class="modal-body">
+            <form [formGroup]="formValue">
+                <div class="form-group mb-3">
+                    <input 
+                    type="text" 
+                    formControlName="hotelName"
+                    class="form-control" 
+                    id="exampleInputEmail1" 
+                    aria-describedby="emailHelp" 
+                    placeholder="Hotel Name"
+                    >
+                </div>
+                <div class="form-group mb-3">
+                    <input 
+                    type="text" 
+                    formControlName="location"
+                    class="form-control" 
+                    id="exampleInputEmail1" 
+                    aria-describedby="emailHelp" 
+                    placeholder="Hotel Location"
+                    >
+                </div>
+                <div class="form-group mb-3">
+                    <input 
+                    type="number" 
+                    formControlName="price"
+                    class="form-control" 
+                    id="exampleInputEmail1" 
+                    aria-describedby="emailHelp" 
+                    placeholder="Price per Night"
+                    >
+                </div>
+                
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" *ngIf="showAdd" (click)="postHotelDetails()" class="btn btn-primary">ADD</button>
+          <button type="button" *ngIf="showUpdate" (click)="updateHotelListing()" class="btn btn-primary">UPDATE</button>
+          <button type="button" id="cancel" data-bs-toggle="modal" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
