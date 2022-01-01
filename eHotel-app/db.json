@@ -6,7 +6,7 @@
       "email": "asithmahat@outlook.com",
       "phone": 17670001,
       "password": "qwerty123",
-      "loggedin": true
+      "loggedin": false
     },
     {
       "id": 2,
@@ -25,13 +25,15 @@
       "loggedin": false
     }
   ],
+
+  
   "listings": [
     {
       "id": 1,
       "uid": 0,
       "hotelName": "Thimphu Hotel",
       "location": "Thimphu",
-      "price": 1500
+      "price": 1400
     },
     {
       "id": 2,
@@ -46,6 +48,20 @@
       "hotelName": "Tsirang Resort",
       "location": "Tsirang",
       "price": 1500
+    },
+    {
+      "id": 5,
+      "uid": 0,
+      "hotelName": "Hotel California",
+      "location": "California",
+      "price": 12500
+    },
+    {
+      "id": 6,
+      "uid": 0,
+      "hotelName": "Ramada Inn",
+      "location": "Changjiji, Thimphu",
+      "price": 5500
     }
   ]
 }
