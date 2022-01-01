@@ -21,6 +21,7 @@ export class AddHotelComponent implements OnInit {
 
   ngOnInit(): void {
     this.formValue = this.formBuilder.group({
+      uid:[],
       hotelName: [''],
       location: [''],
       price: ['']
@@ -33,6 +34,7 @@ export class AddHotelComponent implements OnInit {
     this.showUpdate = false;
   }
   postHotelDetails() {
+    this.hotelModelObj.uid = 3;
     this.hotelModelObj.hotelName = this.formValue.value.hotelName;
     this.hotelModelObj.location = this.formValue.value.location;
     this.hotelModelObj.price = this.formValue.value.price;

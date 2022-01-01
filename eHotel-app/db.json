@@ -25,43 +25,66 @@
       "loggedin": false
     }
   ],
-
-  
   "listings": [
     {
       "id": 1,
-      "uid": 0,
+      "uid": 1,
       "hotelName": "Thimphu Hotel",
       "location": "Thimphu",
       "price": 1400
     },
     {
       "id": 2,
-      "uid": 0,
+      "uid": 2,
       "hotelName": "Hotel Phuentsholing",
       "location": "Phuentsholing",
       "price": 1300
     },
     {
       "id": 3,
-      "uid": 0,
+      "uid": 2,
       "hotelName": "Tsirang Resort",
       "location": "Tsirang",
       "price": 1500
     },
     {
       "id": 5,
-      "uid": 0,
+      "uid": 1,
       "hotelName": "Hotel California",
       "location": "California",
       "price": 12500
     },
     {
       "id": 6,
-      "uid": 0,
+      "uid": 1,
       "hotelName": "Ramada Inn",
       "location": "Changjiji, Thimphu",
       "price": 5500
+    },
+    {
+      "id": 7,
+      "uid": 1,
+      "hotelName": "Holiday Inn",
+      "location": "Atlanta",
+      "price": 4000
+    },
+    {
+      "id": 8,
+      "uid": 3,
+      "hotelName": "Hotel Lobes",
+      "location": "Lobesa",
+      "price": 1200
+    }
+  ],
+  "reservation": [
+    {
+      "id": 1,
+      "uid": 1,
+      "hotelName": "Hotel Phuentsholing",
+      "location": "Phuentsholing",
+      "price": 1300,
+      "dateFrom": "Saturday, January 1, 2022",
+      "dateTo": "Wednesday, January 5, 2022"
     }
   ]
 }
